@@ -1,0 +1,95 @@
+.filters {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px #CCCCCC solid;
+    border-radius:4px;
+    /* display: flex;
+    align-items: center; */
+}
+
+/* search button at the right side */
+.filters button {
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    background-color: #FF5A5F;
+    margin: 11px 30px;
+    float: right;
+}
+
+.filters button:hover {
+    opacity: 90%;
+}
+
+/* items at the left side */
+.amenities,
+.locations {
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+
+.locations {
+    border-right: 1px #DDDDDD solid;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 20px 0 0 30px;
+    text-align: left;
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 0 30px;
+    text-align: left;
+}
+
+/* invisible popovers */
+.popover {
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px #DDDDDD solid;
+    border-radius: 4px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.popover h2 {
+    font-size: 16px;
+}
+li {
+    list-style-type: none;
+    margin-block: 10px;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    section.filters div {
+        display: none;
+    }
+
+    section.filters {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .filters button {
+        width: 80px;
+    }
+    
+}
